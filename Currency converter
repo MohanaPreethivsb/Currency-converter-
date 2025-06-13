@@ -1,0 +1,25 @@
+# Currency-converter
+
+usd_to_inr = 83.0
+
+usd_to_eur = 0.93
+
+amount = float(input("Enter amount in USD: "))
+
+to_currency = input("Convert to (INR/EUR): ").upper()
+
+if to_currency == "INR":
+
+converted = amount * usd_to_inr
+
+print(f"{amount} USD = {converted:.2f} INR")
+
+elif to_currency == "EUR":
+
+converted = amount * usd_to_eur
+
+print(f"{amount} USD = {converted:.2f} EUR")
+
+else:
+
+print("Currency not supported.")
